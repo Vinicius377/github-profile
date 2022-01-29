@@ -1,0 +1,31 @@
+@import "../../styles/variables.scss";
+.nav {
+  color: white;
+  font-size: 1.2em;
+  display: flex;
+  width: 100%;
+
+  position: relative;
+  ul {
+    display: flex;
+  }
+}
+.navbody__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: solid 3.5px transparent;
+  gap: 7px;
+  cursor: pointer;
+  padding: 15px 18px;
+  img {
+    width: 18px;
+  }
+  &:hover {
+    border-bottom: solid 3.5px rgb(99, 99, 99);
+  }
+  a {
+    font-size: 0.8em;
+    color: $color-text-default;
+  }
+}

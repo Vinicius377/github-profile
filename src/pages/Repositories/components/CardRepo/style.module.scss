@@ -1,0 +1,89 @@
+@import "../../../../styles/variables.scss";
+.container {
+  color: white;
+  display: flex;
+  border-bottom: solid 0.8px rgb(80, 80, 80);
+  justify-content: space-between;
+  width: 100%;
+  padding-block: 70px;
+  align-items: center;
+  max-height: 100px;
+}
+.repo__name {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  h1 {
+    font-size: 1.2em;
+    color: #4ea1ff;
+    cursor: pointer;
+    border-bottom: solid 1.5px transparent;
+
+    &:hover {
+      border-bottom: solid 1.5px #4ea1ff;
+    }
+  }
+  span {
+    border-radius: 10px;
+    border: solid 0.8px rgb(80, 80, 80);
+    padding: 1px 5px;
+    font-size: 0.75em;
+    color: rgb(119, 119, 119);
+  }
+}
+.repo__item {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.size--m {
+  color: rgb(119, 119, 119);
+  font-size: 0.9em;
+}
+.repo__tec {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  small {
+    height: 12px;
+    width: 12px;
+    display: inline-flex;
+    border-radius: 50%;
+    margin-right: -10px;
+  }
+}
+.repo__tec--language {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.star {
+  display: flex;
+  background: $color-btn-background;
+  align-items: center;
+  border-radius: 5px;
+  font-size: 0.9em;
+  img {
+    width: 20px;
+  }
+  button {
+    padding: 5px 8px;
+    display: flex;
+    align-items: center;
+
+    height: 100%;
+    cursor: pointer;
+    background: transparent;
+    border: solid 0.5px transparent;
+    color: $color-btn-text;
+    width: 100%;
+    &:hover {
+      filter: brightness(1.2);
+      border-radius: 5px 0 0 5px;
+      border: solid 0.5px rgba(240, 246, 251, 0.6);
+    }
+  }
+}

@@ -1,0 +1,52 @@
+@import "../../../../styles/variables.scss";
+
+.container {
+  padding-block: 40px;
+  display: flex;
+  width: 100%;
+  color: #8b949e;
+  font-size: 0.9em;
+  justify-content: space-between;
+  border-bottom: solid 0.8px rgb(80, 80, 80);
+  > div {
+    display: flex;
+    gap: 20px;
+  }
+  button {
+    background-color: $color-btn-background;
+    color: $color-btn-text;
+    border: solid 0.5px transparent;
+    transition: 0.5s;
+    outline: none;
+    height: fit-content;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    &:hover {
+      filter: brightness(1.2);
+      border: solid 0.5px rgba(240, 246, 251, 0.6);
+    }
+  }
+  img {
+    width: 60px;
+    height: 60px;
+  }
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.name {
+  display: flex;
+
+  gap: 15px;
+  span {
+    display: flex;
+    align-self: center;
+  }
+  h1 {
+    color: $color-text-default;
+    font-size: 1.2rem;
+  }
+}
