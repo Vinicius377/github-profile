@@ -2,12 +2,12 @@
 
 > :warning: **Ainda não esta terminado**
 
-![how working](./demonstration.gif)
+![how working](./demonstration.png)
 
 ## Oque é e como funciona?
 
-    -É uma aplicação simples, apenas busca os dados da [api do GITHUB ]:https://api.github.com/users/
-    -Para trocar usuario basta digitar o login na caixa de busca e precionar "Enter"
+- É uma aplicação simples, apenas busca os dados da [api do GITHUB ]:https://api.github.com/users/
+- Para trocar usuario basta digitar o login na caixa de busca e precionar "Enter"
 
 ### Tecnologias usadas
 
