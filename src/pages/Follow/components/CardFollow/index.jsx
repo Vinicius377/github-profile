@@ -4,7 +4,7 @@ import Profile from "../../../../components/Profile";
 import api from "../../../../services/api";
 import { useEffect, useState } from "react";
 import company from "../../../../assets/company.svg";
-import location from "../../../../assets/location.svg";
+import location from "../../../../assets/localization.svg";
 
 function CardFollow({ login }) {
   const [dataFollow, setDataFollow] = useState();
@@ -24,15 +24,23 @@ function CardFollow({ login }) {
                 <span>{dataFollow.login}</span>
               </div>
               <p>{dataFollow.bio}</p>
-              <div>
-                <span>
-                  <img src={company} alt="" /> {dataFollow.company}
-                </span>
-                <span>
-                  {" "}
-                  <img src={location} alt="" />
-                  {dataFollow.location}
-                </span>
+              <div className={style.info__container}>
+                {dataFollow.company && (
+                  <span>
+                    <img src={company} alt="company" className={style.icon} />
+                    {dataFollow.company}
+                  </span>
+                )}
+                {dataFollow.location && (
+                  <span>
+                    <img
+                      src={location}
+                      alt="localization"
+                      className={style.icon}
+                    />
+                    {dataFollow.location}
+                  </span>
+                )}
               </div>
             </div>
           </div>

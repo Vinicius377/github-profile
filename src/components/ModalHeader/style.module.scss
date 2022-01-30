@@ -1,0 +1,16 @@
+@import ".././../styles/variables.scss";
+.container {
+  background: #161b22;
+  color: $color-text-defaul;
+  border: solid $size-btn-border $color-btn-border;
+  box-shadow: 0 2px 4px 4px rgba(0, 0, 0, 0.6);
+  border-radius: 5px;
+  div {
+    width: 100%;
+    border: solid 1px white;
+    padding: 4px 8px;
+    &:hover {
+      background: #4ea1ff;
+    }
+  }
+}

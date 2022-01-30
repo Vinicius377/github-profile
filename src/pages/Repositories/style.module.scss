@@ -1,5 +1,50 @@
+@import "../../styles/variables.scss";
 .cardrepo__container {
   flex-direction: column;
 
   width: 100%;
+}
+
+.filter {
+  padding-block: 10px;
+  border-bottom: solid 0.8px rgb(80, 80, 80);
+  display: flex;
+  gap: 15px;
+  input {
+    flex: 1;
+    background: #0d1117;
+    padding: 8px 10px;
+    border: solid $size-btn-border $color-btn-border;
+    border-radius: 7px;
+    color: white;
+    height: fit-content;
+    font-size: 0.9em;
+    outline: none;
+    &:focus {
+      box-shadow: 0 0 3px 1.5px #4ea1ff;
+    }
+  }
+  div {
+    display: flex;
+    gap: 5px;
+  }
+  button {
+    background: $color-btn-background;
+    color: $color-btn-text;
+    padding: 4px 16px;
+    border-radius: 5px;
+    border: solid $size-btn-border $color-btn-border;
+    transition: 0.5s;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    &:hover {
+      filter: brightness(1.2);
+      border: solid 0.5px rgba(240, 246, 251, 0.6);
+    }
+  }
+}
+.btn__new {
+  background: #238636 !important;
 }

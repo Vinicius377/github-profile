@@ -2,7 +2,6 @@ import React from "react";
 import CardFollow from "./components/CardFollow";
 import api from "../../services/api";
 import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
 
 function Follow({ nick }) {
   const [loginName, setLoginName] = useState();

@@ -50,3 +50,15 @@
     font-size: 1.2rem;
   }
 }
+
+.info__container {
+  display: flex;
+  span {
+    display: flex;
+    align-items: center;
+  }
+  img {
+    width: 20px !important;
+    height: 20px !important;
+  }
+}

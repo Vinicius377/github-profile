@@ -11,6 +11,7 @@ import { useNavigate } from "react-router-dom";
 function Header({ setNick, img, nick }) {
   const [activeSearch, setActiveSearch] = useState(false);
   const navigate = useNavigate();
+
   const focusSearach = () => {
     setActiveSearch(!activeSearch);
   };
@@ -19,6 +20,7 @@ function Header({ setNick, img, nick }) {
       setNick(e.target.value);
     }
   };
+
   useEffect(() => {
     navigate(`/${nick}`);
   }, [nick]);
@@ -57,9 +59,9 @@ function Header({ setNick, img, nick }) {
         </nav>
       </div>
       <div className={style.header__second}>
-        <img src={notification} alt="notification" />
+        <img src={notification} alt="notification" width="20" />
         <div className={style.arrow__container}>
-          <img src={plus} alt="plus" />
+          <img src={plus} alt="plus" width="20" />
           <small>▼</small>
         </div>
         <div className={style.arrow__container}>

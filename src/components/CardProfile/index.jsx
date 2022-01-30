@@ -9,7 +9,7 @@ function CardProfile({ cardData }) {
 
   const onNavigate = (tab) => {};
   return (
-    <div className={style.cardprofile}>
+    <aside className={style.cardprofile}>
       <Perfil img={cardData.img} className={style.profile} />
       <div className={style.name}>
         <h1>{cardData.name}</h1>
@@ -28,7 +28,7 @@ function CardProfile({ cardData }) {
           <strong>{cardData.followingCount}</strong> following
         </span>
       </div>
-    </div>
+    </aside>
   );
 }
 
